@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "db1dia": {
+      "hosting": {
+        "app": [
+          "db1dia"
+        ]
+      }
+    }
+  }
+}
