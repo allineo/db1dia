@@ -2,7 +2,7 @@ export const environment = {
   production: true,
 
   firebaseConfig: {
-    apiKey: "xxxxxxxxxxxxxxxxx",
+    apiKey: "xxxxxxxxxxx",
     authDomain: "db1dia.firebaseapp.com",
     databaseURL: "https://db1dia.firebaseio.com",
     projectId: "db1dia",

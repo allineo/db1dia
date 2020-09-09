@@ -32,7 +32,12 @@ export class FeedbackPage implements OnInit {
   async listFeedback() {
     var list = await this.feedbackService.listFeedback();
     this.feedbackList = Object.keys(list).map(key => list[key]);
-    // console.log(list);
+  }
+
+  async editFeedback(id) {
+    var feedback = await this.feedbackService.getFeedback(id);
+    this.messageField = feedback["message"];
+    this.contactField = feedback["contact"];
   }
 
 }

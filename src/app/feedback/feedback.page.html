@@ -37,10 +37,14 @@
 
   <ion-list>
     <ion-item *ngFor="let feedback of feedbackList">
-      <br>
-      Data: {{ feedback.datetime.toDate() | date: 'dd/MM/yyyy HH:mm:ss'}}<br>
-      Contato: {{ feedback.contact }}<br>
-      Mensagem: {{ feedback.message }}<br>
+      <ion-card (click)="editFeedback(feedback.id)">
+        <ion-card-content>
+          Data: {{ feedback.datetime.toDate() | date: 'dd/MM/yyyy HH:mm:ss'}}<br />
+          <a>Contato: {{ feedback.contact }}</a><br />
+          Mensagem: {{ feedback.message }}<br />
+        </ion-card-content>
+      </ion-card>
+      <br />
     </ion-item>
   </ion-list>
 
